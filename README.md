@@ -11,3 +11,7 @@ docker-compose up --force-recreate kryolite-first
 ```console
 docker-compose up --force-recreate kryolite-second
 ```
+
+```console
+docker-compose up --force-recreate kryolite-miner
+```

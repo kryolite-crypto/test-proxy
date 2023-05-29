@@ -49,7 +49,16 @@ services:
   kryolite-miner:
     image: ghcr.io/kryolite-crypto/kryolite/miner:1.2.4
     command:
-
+      - --url
+      - http://first
+      - --address
+      - kryo:5VWFfnqDu7RxLWXvNc12pEqvdB84WRxWJRq4
+    extra_hosts:
+      - "first:192.168.55.10"
+      - "second:192.168.55.10"
+    networks:
+      kryolite:
+        ipv4_address: 192.168.55.100
 
 networks:
   kryolite:
